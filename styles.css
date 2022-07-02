@@ -1,6 +1,47 @@
+main {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 #nav-bar {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-link {
+    font-size: xx-large;
+    margin: 0 auto;
+}
+
+p {
+    padding: 0 40px;
+}
+
+#about,
+#bolo {
+    font-size: large;
+}
+
+#video {
+    display: block;
+    margin: 0 auto;
+}
+
+#section-video {
+    padding-top: 200px;
+    font-size: 30px;
+    margin: 0 auto;
+}
+
+#section-email {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+#section-email,
+#section-bolo {
+    padding: 40px;
 }
 
 #header {
@@ -17,7 +58,30 @@
 
 @media screen and (max-width: 798px) {
 
+    * {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    img {
+        width: 33%;
+    }
+
     main {
         width: 100%;
+        margin: 0 auto;
+    }
+
+    #nav-bar,
+    .nav-link {
+        display: flex;
+        align-content: center;
+        font-size: larger;
+        padding: 10px;
+    }
+
+    section {
+        width: 80%;
+        margin: 0 auto;
     }
 }
